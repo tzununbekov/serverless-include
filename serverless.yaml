@@ -1,0 +1,12 @@
+service: serverless-bar
+
+provider:
+  name: triggermesh
+  description: "serverless.yaml include parsing test"
+
+functions:
+  py:
+    handler: handler.py
+    runtime: https://raw.githubusercontent.com/triggermesh/openfaas-runtime/master/python2.7/openfaas-python2.7-runtime.yaml
+    environment:
+      FUNCTION: py
