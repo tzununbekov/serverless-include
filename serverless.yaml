@@ -11,3 +11,6 @@ functions:
     environment:
       FUNCTION: py
       TEST: test
+      
+include:
+  - https://github.com/tzununbekov/sample-func
